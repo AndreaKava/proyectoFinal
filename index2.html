@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Química Del Valle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos de limpieza de calidad certificada, biodegradables, eco-friendly.">
+
+    <link rel="stylesheet" href="styles2.css"> <!-- Traigo Style para que no sea tan largo el código-->
+    
+</head>
+<body>
+
+    <!-- Encabezado de la página intentando Responsive-->
+    <header>
+        <h1>Química Del Valle</h1>
+        <p>Productos de limpieza de alta calidad para tu hogar y negocio</p>
+        <div class="logo">
+            <img src="img/LogoQuímica.png">
+        </div>
+    </header>
+
+    <!-- Productos -->
+    <section>
+        <h2>Nuestros Productos</h2>
+        <p>En Química Del Valle ofrecemos productos de limpieza efectivos y seguros para el cuidado de tu hogar y empresa. ¡Descubre nuestra variedad!</p>
+
+        <h3>Jabones baja espuma</h3>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto" data-id="1" data-name="Jabón Tipo Ariel" data-price="6000">
+                <img class="imágen" src="img/bidónimg.jfif" alt="Producto 1">
+                <h3>Jabón Tipo Ariel</h3>
+                <p>Ideal para lavar todos los textiles de tu hogar.</p>
+                <p><strong>Precio 5 litros: $6000</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto" data-id="2" data-name="Jabón tipo Skip" data-price="7000">
+                <img class="imágen" src="img/bidónimg.jfif" alt="Producto 2">
+                <h3>Jabón tipo Skip</h3>
+                <p>Suaviza y perfuma tus textiles.</p>
+                <p><strong>Precio 5 litros: $7000</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto" data-id="3" data-name="Jabón tipo Oxi" data-price="5000">
+                <img class="imágen" src="img/bidónimg.jfif" alt="Producto 3">
+                <h3>Jabón tipo Oxi</h3>
+                <p>Concentradas, brindan aroma a tus textiles.</p>
+                <p><strong>Precio 1 litro: $5000</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+<section>
+    <h3>Suavizantes textiles</h3>
+<!-- Galería de productos  tengo que ver el tamaño de las imágenes, ya que hay unas más grandes y otras más pequeñas-->
+<div class="productos">
+    
+    <!-- Producto 1 -->
+    <div class="producto" data-id="1" data-name="producto1" data-price="6000">
+        <img class="imágen" src= "img/bidónimg.jfif" alt="Producto 1">
+        <h3>Clásico Celeste</h3>
+        <p>Ideal para lavar todos los textiles de tu hogar.</p>
+        <p><strong>Precio 5 litros: $6000</strong></p>
+        <button class="add-to-cart ">Agregar al carrito</button>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="producto" data-id="2" data-name="producto2" data-price="7000">
+        <img class="imágen" src="img/bidónimg.jfif" alt="Producto 2">
+        <h3>Doble Amarillo</h3>
+        <p>Suaviza y perfuma tus textiles.</p>
+        <p><strong>Precio 5 litros: $7000</strong></p>
+        <button class="add-to-cart ">Agregar al carrito</button>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="producto" data-id="2" data-name="producto2" data-price="7000">
+        <img class="imágen" src="img/bidónimg.jfif" alt="Producto 3">
+        <h3>Doble Rosa</h3>
+        <p>Concentradas, brindan aroma a tus textiles.</p>
+        <p><strong>Precio 1 litro: $5000</strong></p>
+        <button class="add-to-cart ">Agregar al carrito</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto" data-id="2" data-name="producto2" data-price="7000">
+    <img class="imágen" src="img/bidónimg.jfif" alt="Producto 4">
+    <h3>Tipo Vívere</h3>
+    <p>Obtén tus blancos impecables sin esfuerzo.</p>
+    <p><strong>Precio 5 litros: $4000</strong></p>
+    <button class="add-to-cart ">Agregar al carrito</button>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto" data-id="2" data-name="producto2" data-price="7000">
+    <img class="imágen" src="img/bidónimg.jfif" alt="Producto 5">
+    <h3>Triple Oxi</h3>
+    <p>Desinfectá sin perder los colores de tus prendas.</p>
+    <p><strong>Precio 5 litros: $12500</strong></p>
+    <button class="add-to-cart ">Agregar al carrito</button> 
+    </div>
+</div>
+</section> 
+
+
+    <!-- Carrito de compras -->
+    <div class="cart-icon" id="cart-icon">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <div class="cart" id="cart-modal">
+        <h2>Carrito de Compras</h2>
+        <ul class="cart-list" id="cart-list"></ul>
+        <p class="total">Total de la Compra: $<span id="total">0</span></p>
+        <button class="clear-cart" id="clear-cart">Limpiar Carrito</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.398858676234!2d-58.39865592495235!3d-34.6951184729217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccce73fb740c3%3A0xc0fe1df16643c6b5!2sInt.%20Manuel%20Quindimil%20474%2C%20B1824%20KTM%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1731708878726!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>&copy; 2024 Química Del Valle - Todos los derechos reservados</p>
+        <p> Contáctanos: <a href="mailto:delvallequimica@gmail.com?subject=AsuntoNecesitoInfo"> Enviar Correo 💻 </a> </p>
+        <p> Escribínos: <a href="https://wa.me/541125625229"> Enviar mensaje 📱</a> </p>
+    </footer>
+
+    <script>
+        const cart = [];
+        const cartModal = document.getElementById('cart-modal');
+        const cartList = document.getElementById('cart-list');
+        const totalPriceElement = document.getElementById('total');
+        const cartCountElement = document.getElementById('cart-count');
+        const cartIcon = document.getElementById('cart-icon');
+        const clearCartButton = document.getElementById('clear-cart');
+
+        cartIcon.addEventListener('click', () => {
+            cartModal.classList.toggle('open');
+        });
+
+        // Función para actualizar el carrito
+        function updateCart() {
+            cartList.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+                const quantityDiv = document.createElement('div');
+                quantityDiv.classList.add('quantity-buttons');
+                const decreaseButton = document.createElement('button');
+                decreaseButton.textContent = '-';
+                const increaseButton = document.createElement('button');
+                increaseButton.textContent = '+';
+                const quantitySpan = document.createElement('span');
+                quantitySpan.classList.add('quantity');
+                quantitySpan.textContent = item.quantity;
+
+                decreaseButton.addEventListener('click', () => updateQuantity(item, -1));
+                increaseButton.addEventListener('click', () => updateQuantity(item, 1));
+
+                quantityDiv.appendChild(decreaseButton);
+                quantityDiv.appendChild(quantitySpan);
+                quantityDiv.appendChild(increaseButton);
+                listItem.appendChild(quantityDiv);
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Eliminar';
+                deleteButton.addEventListener('click', () => removeItemFromCart(item.id));
+                listItem.appendChild(deleteButton);
+
+                cartList.appendChild(listItem);
+                total += item.price * item.quantity;
+            });
+
+            totalPriceElement.textContent = total.toFixed(2);
+            cartCountElement.textContent = cart.length;
+        }
+
+        // Función para agregar productos al carrito
+        function addToCart(product) {
+            const existingProduct = cart.find(item => item.id === product.id);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        // Acá para agregar o sacar cantidades del producto
+        function updateQuantity(item, change) {
+            item.quantity += change;
+            if (item.quantity <= 0) {
+                removeItemFromCart(item.id);
+            } else {
+                updateCart();
+            }
+        }
+
+        // Eliminar productos del carrito
+        function removeItemFromCart(id) {
+            const index = cart.findIndex(item => item.id === id);
+            if (index !== -1) {
+                cart.splice(index, 1);
+                updateCart();
+            }
+        }
+
+        // Agregar productos al carrito al hacer clic en el botón
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productElement = event.target.closest('.producto');
+                const product = {
+                    id: productElement.getAttribute('data-id'),
+                    name: productElement.getAttribute('data-name'),
+                    price: parseFloat(productElement.getAttribute('data-price')),
+                };
+                addToCart(product);
+            });
+        });
+
+        // Limpiar carrito
+        clearCartButton.addEventListener('click', () => {
+            cart.length = 0;
+            updateCart();
+        });
+         // Mostrar ventana de confirmación
+        function showConfirmationMessage() {
+            confirmationMessage.class}
+    </script>
+</body>
+</html>
+
+<!--Intenté hace el menú hamburguesa, utilizando este video: https://www.youtube.com/watch?v=Xs3cC8-5QDI, pero se ve que algo estoy haciendo mal, ya que cuando intento hacer una cosa, me desaparece otra, se rompe el código. y ya lo he intentado varias veces, tal vez es cuestión de práctica, un poquito más. Pero esto es hasta ahora lo que tengo, no quiero estar hasta último momento, como la vez anterior
+También intenté ocultar la ventanita del carrito de compras, y cuando lo logro, se me descalibra todo el resto, así que la he dejado así.
+Sé que es cuestión de práctica, pero ahora estoy a contrareloj y al menos quiero que se vea que lo he intentado
+Gracias Nico-->
